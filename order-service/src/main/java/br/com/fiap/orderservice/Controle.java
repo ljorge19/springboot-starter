@@ -1,4 +1,4 @@
-package Controle;
+package br.com.fiap.orderservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -31,8 +31,10 @@ public class Controle {
 		return item;
 	}
 
-	@GetMapping("/health")
+	@RequestMapping(value = "/health", method = RequestMethod.GET)
 	public boolean retornarh() {
 		return true;
+		
+		
 	}
 }

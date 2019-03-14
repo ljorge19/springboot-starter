@@ -1,4 +1,4 @@
-package Controle;
+package br.com.fiap.orderservice;
 
 
 
@@ -8,6 +8,21 @@ public class PedidoDto {
 	private Long idPedido;
 	private String nomeCliente;
 	private String itemAdquirido;
+	
+	/* 
+	 email, 
+	 Nome
+	 completo e 
+	 shipping address, 
+	 id do pedido, 
+	 descrição de cada item do pedido,
+	 quantidade de itens do pedido, 
+	 preço unitário de cada item, 
+	 preço total do
+	 pagamento, 
+	 forma de pagamento, 
+	 data do pedido e status do pedido
+	*/
 	
 	
 	/**
@@ -46,6 +61,7 @@ public class PedidoDto {
 	public void setItemAdquirido(String itemAdquirido) {
 		this.itemAdquirido = itemAdquirido;
 	}
+	
 	
 	
 	
