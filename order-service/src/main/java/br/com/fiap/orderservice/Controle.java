@@ -1,25 +1,20 @@
 package br.com.fiap.orderservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-//@Controller
+import br.com.fiap.model.PedidoDto;
+
+
+
 @RestController
+@RequestMapping("/orderService")
 public class Controle {
 
-	@RequestMapping(value = "/pedido", method = RequestMethod.GET)
+	@GetMapping("/pedido")
 	public PedidoDto retornaPedido() {
 
 		PedidoDto item = new PedidoDto();
@@ -31,7 +26,7 @@ public class Controle {
 		return item;
 	}
 
-	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	@GetMapping("/health")
 	public boolean retornarh() {
 		return true;
 		

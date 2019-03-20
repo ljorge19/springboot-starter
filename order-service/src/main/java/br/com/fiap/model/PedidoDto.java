@@ -1,4 +1,4 @@
-package br.com.fiap.orderservice;
+package br.com.fiap.model;
 
 
 
